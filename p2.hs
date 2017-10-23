@@ -5,4 +5,4 @@ fib n = fib (n - 1) + fib (n - 2)
 
 list = [fib x | x <- [1,2..], x <= 20]
 
-main = do print $ fib 5
+main = do print $ fib 4
