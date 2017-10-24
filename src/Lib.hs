@@ -1,6 +1,8 @@
 module Lib
-    ( someFunc
+    ( solveProblem
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+import P3
+
+solveProblem :: IO ()
+solveProblem = do solve 

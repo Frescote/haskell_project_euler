@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-24 10:09:01.5615686 UTC
+2017-10-24 13:12:22.0660447 UTC
 
 interface main@main:Main 8002
-  interface hash: cd355335908322c58c04fcd102318448
-  ABI hash: 3fc63853424eeb55c8b1390e55bdbe41
+  interface hash: d1c33d55854076d0beb625c67375fc5e
+  ABI hash: 21cc8fdd2995f280ebf34d05b024243b
   export-list hash: d62875a8b0f425a262ac13d9eae4525d
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 1d79399b3f2d3156718e211178d6501d
@@ -25,7 +25,7 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:GHC.TypeLits
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
-import  -/  haskell-euler-0.1.0.0@haskell-euler-0.1.0.0-GndbwddvHCQB3DevK5pJg0:Lib 478103c01722a8694c17c220d2323f1f
+import  -/  haskell-euler-0.1.0.0@haskell-euler-0.1.0.0-GndbwddvHCQB3DevK5pJg0:Lib 6d09a463ce15ebd797dbf7497de40eb1
 d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -38,19 +38,19 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-33cc18b7b7b061f3d1073545cecaf990
+17edea1dc389eb671c90d7976221e498
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
-                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-9c75aa0b5ae442ed87fa8e593a8b40cd
+                P3.solve1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+e4d7ed74cde87d666dee0b5adffa1f4d
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
-                   Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+                   P3.solve1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

@@ -1,19 +1,19 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-24 10:08:59.4903206 UTC
+2017-10-24 13:12:20.0793023 UTC
 
 interface haskell-euler-0.1.0.0-GndbwddvHCQB3DevK5pJg0:Lib 8002
-  interface hash: 0a20f0d30d8ffbbcaca43adad807cc9c
-  ABI hash: 478103c01722a8694c17c220d2323f1f
-  export-list hash: 87fb7dea94da9e06543240b99a41f6df
+  interface hash: a934a69310b84a9f0b5eeeb317f9cdd3
+  ABI hash: 6d09a463ce15ebd797dbf7497de40eb1
+  export-list hash: bb2ecb839f860c4ccc8c0168103b68b1
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: cf5e51a74637346058012d3a4f4807a9
   sig of: Nothing
   used TH splices: False
   where
 exports:
-  Lib.someFunc
-module dependencies:
+  Lib.solveProblem
+module dependencies: P3
 package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
                       integer-gmp-1.0.0.1
 orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
@@ -23,8 +23,10 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
                          base-4.9.1.0:GHC.TypeLits
 import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
-import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  P3 10640b0add8cddee6491b8eb0ac0ed04
+  exports: 81da84340f9a5ec49ed047173287fa1d
+  solve 620551ff1c00d96c2ec0ab91a18d9e9c
 a94731bf9aca8260ab9e31b60c321c06
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -38,26 +40,11 @@ dbeebd3f5482f9730ad0ff52120b9d2b
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "haskell-euler-0.1.0.0-GndbwddvHCQB3DevK5pJg0"#) -}
-5a9307150b70ec10e6b8fce70fb3ada6
-  someFunc :: GHC.Types.IO ()
+81a325002333fb1f6478261240871fd2
+  solveProblem :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
-                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-46e6fd204e459e19d5a025e8b2bb7bc1
-  someFunc1 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (eta :: GHC.Prim.State#
-                             GHC.Prim.RealWorld)[OneShot] ->
-                 GHC.IO.Handle.Text.hPutStr2
-                   GHC.IO.Handle.FD.stdout
-                   Lib.someFunc2
-                   GHC.Types.True
-                   eta) -}
-d5f31b01f530f2f0c25532aae0e1f71a
-  someFunc2 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+                P3.solve1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
